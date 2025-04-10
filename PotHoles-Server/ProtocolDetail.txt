@@ -1,0 +1,186 @@
+Requisiti:
+	-> nickname
+	-> password
+	-> valore soglia accelerometro
+	-> coordinate
+	-> valore accelerometro registrato
+
+Comandi:
+	-> richiesta dati inizializzazione : client-to-server
+	-> richiesta coordinate eventi vicini : client-to-server
+		:nickname
+		:coordinate
+	-> salvataggio dati : client-to-server
+		:nickname
+		:coordinate
+		:valore accelerometro
+	-> conferma ricezione : client-to-server
+	-> chiusura connessione : client-to-server
+	-> invio dati inizializzazione : servet-to-client
+		:valore soglia accelerometro
+	-> invio coordinate eventi vicini : server-to-client
+	-> conferma ricezione : server-to-client
+
+
+
+Il protocollo ECM (Enhanced Coordinate Messaging Protocol) permette la comunicazione tra il server
+e il client in modo semplice ed efficace.
+E' stato ideato con uno sguardo al futuro, in modo che sia facilmente espandibile senza stravolgere
+il codice già scritto.
+
+La struttura di un comando ECM segue il segue pattern:
+
+	HEADER -> PACKET_SIZE -> COMMAND -> OTHER_DATA_ACCORDING_TO_THE_COMMAND
+
+Dall'analisi delle specifiche commissionate, si è deciso un approccio dove è sempre il client a comuniare
+per primo. Si è scelto anche di utilizzare una nomenclatura dei comandi esplicita per permettere una facile comprensione
+degli stessi in modo da facilitare la correzione del progetto.
+
+Struttura comandi:
+	Echo:
+		Client-Server:
+			ECM_PROT_V1
+			<packet size> : uint_32
+			ECHO_REQUEST\n
+
+		Client-Server:
+			ECM_PROT_V1
+			<packet size> : uint_32
+			ECHO_REPLY\n
+	La richiesta ECHO viene utilizzata sia dal client che dal server per verificare che la connessione tra di loro sia
+	ancora attiva.
+
+	Initializzation check:
+		Client:
+			ECM_PROT_V1
+			<packet size> : uint_32
+			CHECK\n
+		Server:
+			ECM_PROT_V1
+			<packet size> : uint_32
+			CHECK_OK\n
+			-------------
+			ECM_PROT_V1
+			<packet size> : uint_32
+			CHECK_FAIL\n
+	La richiesta CHECK permette di conoscere lo stato di disponibilità del server.
+	Ad esempio, se il server ha il db in manutenzione è sempre possibile ricevere una notifica di indisponibilità
+	a offrire il servizio, senza che il client si ritrovi solo un errore di irrangiugibilità del server.
+
+	Registration:
+		Client:
+			ECM_PROT_V1
+			<packet size> : uint_32
+			USR_REG_REQUEST\n
+			<user>\n : char
+			<password>\n : char
+			<email>\n : char
+			<name>\n : char
+			<surname>\n : char
+		Server:
+			ECM_PROT_V1
+			<packet size> : uint_32
+			USR_REG_OK\n
+			------------------------
+			ECM_PROT_V1
+			<packet size> : uint_32
+			USR_REG_FAIL\n
+	La registrazione di un nuovo utente avviene con il client che invia la richiesta USR_REG_REQUEST e i dati
+	necessari.
+	Il server può rispondere USR_REG_OK in caso di successo, ovvero USR_REG_FAIL in caso ci siano problemi con la
+	registrazione del nuovo utente.
+
+	Login:
+		Client:
+			ECM_PROT_V1
+			<packet size> : uint_32
+			LOGIN_REQUEST\n
+			<user>\n : char
+			<password>\n : char
+		Server:
+			ECM_PROT_V1
+			<packet size> : uint_32
+			LOGIN_OK\n
+			------------------------
+			ECM_PROT_V1
+			<packet size> : uint_32
+			LOGIN_FAIL\n
+			------------------------
+			ECM_PROT_V1
+			<packet size> : uint_32
+			USR_NOT_LOGGED\n
+	Il login avviene con la richiesta LOGIN_REQUEST e i suoi dati.
+	Il server può rispondere con LOGIN_OK in caso di successo, ovvero LOGIN_FAIL nel caso l'utente non risulti registrato.
+	La risposta USR_NOT_LOGGED viene inviata al client qual'ora quest'ultimo effettui una qualsiasi altra richiesta, diversa
+	dalla echo, dalla check e dalla registrazione, senza che l'utente abbia prima effettuato la login.
+
+	Near event:
+		Client:
+			ECM_PROT_V1
+			<packet size> : uint_32
+			NEAR_EVENT_REQUEST\n
+			<max_distanza> : uint32;
+			<coords_payload> : struct ecm_accelerometer_coords_t
+		Server:
+			ECM_PROT_V1
+			<packet size> : uint_32
+			NEAR_EVENT_REPLY\n
+			<num_coords> : uint32
+			<coords_payload> : struct ecm_accelerometer_coords_t
+			----------------
+			ECM_PROT_V1
+			<packet size> : uint_32
+			NEAR_EVENT_NOT_FOUND\n
+	Con la richiesta NEAR_EVENT_REQUEST il client richiede al server la presenza di buche nelle vicinanze delle coordinate
+	allegate, con un certo raggio.
+	Nel caso siano presenti buche corrispondenti alla richiesta allora il server risponde con NEAR_EVENT_REPLY e la lista delle
+	buche (posizione e valore dell'accelerometro), ovvero risponde NEAR_EVENT_NOT_FOUND nel caso non ci siano buche nelle
+	vicinanze delle coordinate inviate.
+
+	Get accelerometer value:
+		Client:
+			ECM_PROT_V1
+			<packet size> : uint32
+			ACCELEROMETER_REQUEST\n
+		Server:
+			ECM_PROT_V1
+			<packet size> : uint_32
+			ACCELEROMETER_RESPONSE\n
+			<accelerometer threshold> : double
+	Quando il client chiede il valore soglia per l'accelerometro con la richiesta ACCELEROMETER_REQUEST, il server risponde
+	con ACCELEROMETER_RESPONSE e il valore soglia desiderato.
+
+	Save coords:
+		Client:
+			ECM_PROT_V1
+			<packet size> : uint_32
+			SAVE_COORDS_REQUEST\n
+			<num_coords> : uint32
+			<coords_payload> : struct ecm_accelerometer_coords_t
+		Server:
+			ECM_PROT_V1
+			<packet size> : uint_32
+			SAVE_COORDS_OK\n
+			----------------
+			ECM_PROT_V1
+			<packet size> : uint_32
+			SAVE_COORDS_FAIL\n
+	Quando il client è pronto per salvare la poszione di nuove buche, viene utilizzata la richiesta SAVE_COORDS_REQUEST
+	seguita dalla lista delle coordinate da salvare.
+	Da notare che, anche se nelle spefiche di progetto è stato richiesto che la connessione al server rimanesse attiva per
+	tutto il tempo di salvataggio e, quindi, si saebbe potuto evitare l'inivio di una lista di posizioni, si è scelta la
+	lista proprio in caso di cambiamenti futuri delle specifiche.
+
+	Close connection:
+		Client:
+			ECM_PROT_V1
+			<packet size> : uint_32
+			CONN_CLOSE_ANNOUNCEMENT\n
+		Server:
+			ECM_PROT_V1
+			<packet size> : uint_32
+			CONN_CLOSE_OK\n
+	Quando il client ha finito, invia al server la comunicazione che sta per chiudere la connessione con la richiesta
+	CONN_CLOSE_ANNOUNCEMENT.
+	Il server ricevuto questa richiesta, invia una conferma al client con CONN_CLOSE_OK.
+
