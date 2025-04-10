@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">PotHoles</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Home Activity -->
+    <string name="home_activity_toast_location_disabled">Location services are not active by the system</string>
+
+    <string name="home_activity_alert_info_location_service_title">Info</string>
+    <string name="home_activity_alert_info_location_service_message">
+        Some features require permission to use location services to enhance the user experience.\nLocation services are required for gps tracking.
+    </string>
+    <string name="home_activity_toast_event_not_found">There are no holes in this area</string>
+    <string name="home_activity_alert_warning_title">Warning</string>
+    <string name="home_activity_alert_connection_error">Problem connecting to the server.\nPlease check your connectivity and try again.</string>
+    <string name="home_activity_alert_connection_back">You are connected to the server.\nYou can try again now.</string>
+    <string name="home_activity_alert_error_title">Error</string>
+    <string name="home_activity_alert_generic_error">An error has occurred.\nPlease try again later.</string>
+
+    <!-- User Accessibility -->
+    <string name="user_access_username">Username</string>
+    <string name="user_access_password">Password</string>
+    <string name="user_access_remember_me">Remember me</string>
+    <string name="user_access_login">Login</string>
+    <string name="user_access_new_account">New Account</string>
+    <string name="user_access_name">Name</string>
+    <string name="user_access_surname">Surname</string>
+    <string name="user_access_email">Email</string>
+    <string name="user_access_confirm_password">Confirm Password</string>
+    <string name="user_access_register">Register</string>
+    <string name="user_access_password_type">Password must contain 8 characters and a symbol like .,-_</string>
+
+    <string name="user_access_empty_email_error">Email must not be empty</string>
+    <string name="user_access_empty_username_error">Username must not be empty</string>
+    <string name="user_access_empty_password_error">Password must not be empty</string>
+    <string name="user_access_empty_name_error">Name must not be empty</string>
+    <string name="user_access_empty_surname_error">Surname must not be empty</string>
+    <string name="user_access_wrong_name_error">Name must contain only letters</string>
+    <string name="user_access_wrong_surname_error">Surname must contain only letters</string>
+    <string name="user_access_wrong_username_error">Username can only contain letters, numbers and . and -, but not together!</string>
+    <string name="user_access_confirm_password_error">Passwords are not the same</string>
+    <string name="user_access_wrong_password_error">Password does not respect the appropriate requirement</string>
+    <string name="user_access_empty_confirm_password_error">Confirm password must not be empty</string>
+    <string name="user_access_long_name">Entered name is too long, you can type maximum 64 characters</string>
+    <string name="user_access_long_surname">Entered surname is too long, you can type maximum 64 characters</string>
+    <string name="user_access_long_username">Entered username is too long, you can type maximum 36 characters</string>
+    <string name="user_access_long_email">Entered email is too long, you can type maximum 254 characters</string>
+    <string name="user_access_long_password">Entered password is too long, you can type maximum 36 characters</string>
+
+    <string name="user_access_try_again">Something went wrong, try again.</string>
+    <string name="user_access_login_fail">Login failed, try again.</string>
+    <string name="user_access_no_connection">There is an error connecting to the server, try again later.</string>
+
+    <!-- Internet connection -->
+    <string name="internet_check_connection">Please, check your connection</string>
+    <string name="internet_no_connection_message">It seems that you don\'t have any active connection here.
+        \PotHoles requires internet connection to work, so check it before continuing and try again!</string>
+
+    <string name="internet_connection_back">You are connected to internet</string>
+    <string name="internet_connection_back_message">You can try again now!</string>
+
+    <!--  Toast string  -->
+    <string name="toast_found_hole">You have found a hole!</string>
+    <string name="motion_toast_success">Success</string>
+    <string name="motion_toast_error">Error</string>
+    <string name="motion_toast_warning">Warning</string>
+    <string name="motion_toast_info">Information</string>
+
+    <string name="no_hole_found">There are no holes around!</string>
+    <string name="welcome_message">Welcome to PotHoles</string>
+    <string name="toolbar_logout">Logout</string>
+    <string name="toolbar_help">Help</string>
+    <string name="settings">Settings</string>
+    <string name="firstScreenIntroTitle">WHAT IS POTHOLES</string>
+    <string name="firstScreenIntroDescription">Potholes is an application that shows you all nearest potholes in your area.\nWhenever you go to a new area and you open Potholes, the app will update the map reporting all the holes reported by other users.</string>
+    <string name="secondScreenIntroTitle">HOW DOES IT WORK</string>
+    <string name="secondScreenIntroDescription">When you start your recording, the application uses your accelerometer to find potholes on the street and shows them to all the people using the app close to you.\nTo use Potholes it is necessary to be registered.</string>
+    <string name="thirdScreenIntroTitle">BE SAFE</string>
+    <string name="thirdScreenIntroDescription">Pay attention when you use Potholes.\nWhen you are driving pay attention to the road first.\nBe safe and find all the potholes that you can!\n(we hope you will not find any).</string>
+
+</resources>

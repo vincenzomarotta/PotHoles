@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/account_circle_icon.xml" value="0.1" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/alternate_email_icon.xml" value="0.1" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/arrow_back_icon.xml" value="0.137" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/background_found_hole.xml" value="0.137" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/background_toast_error.xml" value="0.137" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/background_toast_info.xml" value="0.137" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/background_toast_success.xml" value="0.137" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/background_toast_warning.xml" value="0.137" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/create_icon.xml" value="0.1" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/current_position_icon.xml" value="0.1" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/error_icon.xml" value="0.1" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/first_layer.xml" value="0.1" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/help_icon.xml" value="0.1" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/hole_icon_foreground.xml" value="0.137" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/ic_baseline_remove_24.xml" value="0.1" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/lock_icon.xml" value="0.1" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/login_icon.xml" value="0.1" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/logout_icon.xml" value="0.1" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/my_location_icon.xml" value="0.1" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/navigation_arrow.xml" value="0.1" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/pause_icon.xml" value="0.137" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/person_icon.xml" value="0.1" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/play_icon.xml" value="0.137" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/potholes_icon.xml" value="0.1" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/refresh_icon.xml" value="0.137" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/second_layer.xml" value="0.1" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/shapebottomsheet.xml" value="0.1" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/font/montserrat.xml" value="0.15677083333333333" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/font/open_sans.xml" value="0.15677083333333333" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/layout/activity_home.xml" value="0.136" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/layout/activity_intro.xml" value="0.1" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/layout/activity_main.xml" value="0.1265625" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/layout/activity_user_access.xml" value="0.1" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/layout/fragment_home_maps.xml" value="0.1265625" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/layout/fragment_login.xml" value="0.1265625" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/layout/fragment_registration.xml" value="0.1265625" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/layout/fragment_view_holes.xml" value="0.2" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/layout/list_item_holes.xml" value="0.264" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/layout/toast_error.xml" value="0.2" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/layout/toast_foundhole.xml" value="0.6" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/layout/toast_info.xml" value="0.1265625" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/layout/toast_success.xml" value="0.1265625" />
+        <entry key="..\:/Users/109017/AndroidStudioProjects/PotHoles/app/src/main/res/layout/toast_warning.xml" value="0.1265625" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/drawable-v24/potholes_icon.xml" value="0.3635" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/arrow_back_icon.xml" value="0.2345" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/car_icon.xml" value="0.2345" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/create_icon.xml" value="0.1975" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/current_position_icon.xml" value="0.349" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/first_layer.xml" value="0.3635" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/ic_brightness_1_black_24dp.xml" value="0.1975" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/ic_brightness_1_grey_24dp.xml" value="0.1975" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/navigation_arrow.xml" value="0.2345" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/pause_icon.xml" value="0.3635" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/person_icon.xml" value="0.2345" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/play_icon.xml" value="0.2345" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/potholes_icon.xml" value="0.25" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/refresh_icon.xml" value="0.3635" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/second_layer.xml" value="0.3635" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/shapebottomsheet.xml" value="0.3415" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/third_layer.xml" value="0.3635" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/drawable/twotone_navigation_icon.xml" value="0.167" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/layout/activity_home.xml" value="0.3625" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/layout/activity_intro.xml" value="0.23529411764705882" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/layout/activity_user_access.xml" value="0.3523550724637681" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/layout/fragment_first_screen_intro.xml" value="0.24468085106382978" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/layout/fragment_home_maps.xml" value="0.3523550724637681" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/layout/fragment_intro.xml" value="0.23529411764705882" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/layout/fragment_login.xml" value="0.3523550724637681" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/layout/fragment_registration.xml" value="0.3523550724637681" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/layout/fragment_second_screen_intro.xml" value="0.23529411764705882" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/layout/fragment_third_screen_intro.xml" value="0.23529411764705882" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/layout/fragment_view_holes.xml" value="0.3625" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/layout/list_item_holes.xml" value="0.3625" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/layout/toast_success.xml" value="0.35507246376811596" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/layout/toolbar.xml" value="0.3614583333333333" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/menu/draw_menu_home.xml" value="0.3614583333333333" />
+        <entry key="..\:/Users/vince/AndroidStudioProjects/PotHoles/app/src/main/res/menu/menu_home.xml" value="0.3625" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.28020833333333334" />
+        <entry key="app/src/main/res/layout/fragment_home_maps.xml" value="0.28020833333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

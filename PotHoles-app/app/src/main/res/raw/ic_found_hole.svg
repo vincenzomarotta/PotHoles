@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100pt" height="100pt" viewBox="0 0 100 100" version="1.1">
+    <g id="surface1">
+        <path style=" stroke:none;fill-rule:nonzero;fill:rgb(225.098039%,72.117647%,45.980392%);fill-opacity:1;" d="M 100 50 C 100 77.613281 77.613281 100 50 100 C 22.386719 100 0 77.613281 0 50 C 0 22.386719 22.386719 0 50 0 C 77.613281 0 100 22.386719 100 50 Z M 100 50 "/>
+        <path style=" stroke:none;fill-rule:nonzero;fill:rgb(225%,65%,30%);fill-opacity:1;" d="M 37.222656 72.554688 L 62.933594 98.265625 C 84.226562 92.585938 100 73.1875 100 50 C 100 49.527344 100 49.054688 100 48.582031 L 79.8125 29.96875 Z M 37.222656 72.554688 "/>
+        <circle id="cerchio"
+            cx="50" cy="50" r="35"
+            style="stroke: none; fill:#FFFFFF" />
+        <circle id="cerchio"
+            cx="50" cy="50" r="20"
+            style="stroke: none; fill:rgb(225.098039%,72.117647%,45.980392%)" />
+    </g>
+</svg>
