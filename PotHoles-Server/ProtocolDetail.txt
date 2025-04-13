@@ -169,7 +169,7 @@ Struttura comandi:
 	seguita dalla lista delle coordinate da salvare.
 	Da notare che, anche se nelle spefiche di progetto è stato richiesto che la connessione al server rimanesse attiva per
 	tutto il tempo di salvataggio e, quindi, si saebbe potuto evitare l'inivio di una lista di posizioni, si è scelta la
-	lista proprio in caso di cambiamenti futuri delle specifiche.
+	lista proprio in caso di cambiamenti futuri delle specifiche. 
 
 	Close connection:
 		Client:
