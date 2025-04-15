@@ -1,5 +1,9 @@
 
 # 🚗​ PotHoles
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9a2f23cb-e8e4-4253-af4e-7f268c8c366b" width="200" align="center">
+</p>
+
 ## 🤔​ What is PotHoles? 
 PotHoles is a project assigned during Laboratory of Operating Systems course at Università di Napoli Federico II.
 PotHoles is a client-server system designed to manage pothole detection.
@@ -44,14 +48,22 @@ or
   ./main.run -t 10 -q 30 -a 5,0
 ```
 
-## ​🖼️​ Screenshots 
-- In the following screen you can see a recording session while a new pothole has been found. As you can see there is also a red mark on the map showing danger so every user within a specific range can see that.
-- ![Screenshot 2025-04-13 212227](https://github.com/user-attachments/assets/5a8759ed-1ae3-42c3-acc7-ae061e7b9d32)
-- In the following screen you can see a list of potholes found in within a specific range.
-- ![Screenshot 2025-04-13 212237](https://github.com/user-attachments/assets/38e0e0e6-d8f5-4035-9763-feb46a191f70)
+## 🖼️ Screenshots
 
-## ⛏️​ Logo
-<img src="https://github.com/user-attachments/assets/9a2f23cb-e8e4-4253-af4e-7f268c8c366b" width="200" align="center">
+### 📍 Real-time Pothole Detection  
+In this screen, you can see a live recording session during which a new pothole has been detected.  
+A red marker appears on the map to indicate danger, making it visible to all users within a certain radius.
+
+![Screenshot - Pothole Detection](https://github.com/user-attachments/assets/5a8759ed-1ae3-42c3-acc7-ae061e7b9d32)
+
+---
+
+### 📋 List of Nearby Potholes  
+This screen displays a list of potholes detected within the user's proximity, allowing quick and organized access to critical road hazard information.
+
+![Screenshot - Pothole List](https://github.com/user-attachments/assets/38e0e0e6-d8f5-4035-9763-feb46a191f70)
+
+
 
 ## ​🧑🏻‍💻​ Authors
 This project was made in collaboration with:
