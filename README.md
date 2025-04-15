@@ -6,7 +6,7 @@ PotHoles is a client-server system designed to manage pothole detection.
 This project is divided into a client (an Android app) and a server, written in _C_ and running in a UNIX environment.
 ### ​📱​ Client
 As mentioned before, the client is an android app written in Java (as specifically required).\
-the user can start a recording session where the app detects potholes using the smartphone’s accelerometer along the y-axis.\
+The user can start a recording session where the app detects potholes using the smartphone’s accelerometer along the y-axis.\
 If the accelerometer exceeds a certain threshold, a new pothole is detected.
 The user can also check whether there are new events (potholes) within a specific range.
 ### ​💻​ Server
@@ -18,7 +18,7 @@ The server is a multi-thred where instead of assign a new connection to a new th
 For data managment was used a simple databse in **PostegreSQL**.
 
 
-For more detaled info you can check the [documentation](LSO_2122_Doc.pdf)
+For more detailed info you can check the [documentation](LSO_2122_Doc.pdf).
 
 ## 🚀​ Server Installation
 
